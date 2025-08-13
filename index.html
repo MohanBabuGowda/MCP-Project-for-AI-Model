@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality & Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-chart-line"></i>
+                <span>QualityTracker</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#quality" class="nav-link">Quality</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#expense" class="nav-link">Expense</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Track Quality & Manage Expenses</h1>
+                <p class="hero-subtitle">Monitor your business performance with our comprehensive quality and expense tracking system</p>
+                <div class="hero-buttons">
+                    <a href="#quality" class="btn btn-primary">Quality Metrics</a>
+                    <a href="#expense" class="btn btn-secondary">Expense Tracker</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>98%</h3>
+                        <p>Quality Score</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>$45K</h3>
+                        <p>Monthly Savings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Section -->
+    <section id="quality" class="quality-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quality Management</h2>
+                <p>Monitor and improve your quality metrics with real-time data</p>
+            </div>
+            
+            <div class="quality-grid">
+                <div class="quality-card">
+                    <div class="card-header">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Quality Metrics</h3>
+                    </div>
+                    <div class="metric-item">
+                        <span>Defect Rate</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                        <span class="metric-value">85%</span>
+                    </div>
+                    <div class="metric-item">
+                        <span>Customer Satisfaction</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 92%"></div>
+                        </div>
+                        <span class="metric-value">92%</span>
+                    </div>
+                    <div class="metric-item">
+                        <span>On-Time Delivery</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 88%"></div>
+                        </div>
+                        <span class="metric-value">88%</span>
+                    </div>
+                </div>
+
+                <div class="quality-card">
+                    <div class="card-header">
+                        <i class="fas fa-tasks"></i>
+                        <h3>Quality Checklist</h3>
+                    </div>
+                    <div class="checklist">
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check1" checked>
+                            <label for="check1">Product Testing Completed</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check2" checked>
+                            <label for="check2">Quality Standards Met</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check3">
+                            <label for="check3">Documentation Updated</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check4">
+                            <label for="check4">Final Inspection</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quality-card">
+                    <div class="card-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h3>Issues & Actions</h3>
+                    </div>
+                    <div class="issues-list">
+                        <div class="issue-item">
+                            <span class="issue-priority high">High</span>
+                            <p>Material quality variance detected</p>
+                            <span class="issue-date">2 hours ago</span>
+                        </div>
+                        <div class="issue-item">
+                            <span class="issue-priority medium">Medium</span>
+                            <p>Process optimization needed</p>
+                            <span class="issue-date">1 day ago</span>
+                        </div>
+                        <div class="issue-item">
+                            <span class="issue-priority low">Low</span>
+                            <p>Documentation review pending</p>
+                            <span class="issue-date">3 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expense Section -->
+    <section id="expense" class="expense-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Expense Management</h2>
+                <p>Track and analyze your expenses to optimize costs</p>
+            </div>
+
+            <div class="expense-overview">
+                <div class="expense-summary">
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h3>Total Expenses</h3>
+                            <p class="amount">$125,430</p>
+                            <span class="change positive">+12.5%</span>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h3>Monthly Budget</h3>
+                            <p class="amount">$150,000</p>
+                            <span class="change negative">-16.4%</span>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h3>Savings</h3>
+                            <p class="amount">$24,570</p>
+                            <span class="change positive">+8.2%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="expense-details">
+                <div class="expense-chart">
+                    <h3>Expense Breakdown</h3>
+                    <div class="chart-container">
+                        <canvas id="expenseChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="expense-list">
+                    <h3>Recent Transactions</h3>
+                    <div class="transaction-item">
+                        <div class="transaction-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="transaction-details">
+                            <h4>Office Supplies</h4>
+                            <p>Staples Inc.</p>
+                        </div>
+                        <div class="transaction-amount">
+                            <span class="amount">$245.50</span>
+                            <span class="date">Today</span>
+                        </div>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="transaction-details">
+                            <h4>Shipping & Logistics</h4>
+                            <p>FedEx Corporation</p>
+                        </div>
+                        <div class="transaction-amount">
+                            <span class="amount">$1,250.00</span>
+                            <span class="date">Yesterday</span>
+                        </div>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="transaction-details">
+                            <h4>Equipment Maintenance</h4>
+                            <p>Tech Solutions Ltd</p>
+                        </div>
+                        <div class="transaction-amount">
+                            <span class="amount">$3,450.00</span>
+                            <span class="date">2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Our System</h2>
+                <p>Comprehensive quality and expense management for modern businesses</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Quality Assurance</h3>
+                    <p>Monitor quality metrics, track defects, and ensure customer satisfaction with real-time data.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Expense Tracking</h3>
+                    <p>Track expenses, analyze spending patterns, and optimize costs for better profitability.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Analytics & Reports</h3>
+                    <p>Generate comprehensive reports and gain insights into your business performance.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Friendly</h3>
+                    <p>Access your data anywhere, anytime with our responsive mobile design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>QualityTracker</h3>
+                    <p>Empowering businesses with quality and expense management solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#quality">Quality</a></li>
+                        <li><a href="#expense">Expense</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@qualitytracker.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 QualityTracker. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
+
