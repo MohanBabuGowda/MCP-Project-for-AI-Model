@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality & Expense Tracker - Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .demo-container {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        .demo-logo {
+            font-size: 3rem;
+            color: #2563eb;
+            margin-bottom: 1rem;
+        }
+        
+        .demo-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .demo-subtitle {
+            font-size: 1.1rem;
+            color: #64748b;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .demo-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-item {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .feature-item i {
+            font-size: 2rem;
+            color: #2563eb;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-item h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-item p {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .demo-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .demo-btn {
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .demo-btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+        
+        .demo-btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+        }
+        
+        .demo-btn-secondary {
+            background: transparent;
+            color: #2563eb;
+            border: 2px solid #2563eb;
+        }
+        
+        .demo-btn-secondary:hover {
+            background: #2563eb;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .demo-container {
+                padding: 2rem;
+            }
+            
+            .demo-title {
+                font-size: 2rem;
+            }
+            
+            .demo-features {
+                grid-template-columns: 1fr;
+            }
+            
+            .demo-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="demo-container">
+        <div class="demo-logo">
+            <i class="fas fa-chart-line"></i>
+        </div>
+        
+        <h1 class="demo-title">Quality & Expense Tracker</h1>
+        <p class="demo-subtitle">
+            A beautiful, modern website for tracking quality metrics and managing expenses. 
+            Built with HTML5, CSS3, and JavaScript for a responsive and interactive experience.
+        </p>
+        
+        <div class="demo-features">
+            <div class="feature-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Quality Management</h3>
+                <p>Track metrics, manage checklists, and monitor issues</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-calculator"></i>
+                <h3>Expense Tracking</h3>
+                <p>Monitor expenses, analyze spending, and visualize data</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive Design</h3>
+                <p>Works perfectly on all devices and screen sizes</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-chart-pie"></i>
+                <h3>Interactive Charts</h3>
+                <p>Beautiful data visualization with Chart.js</p>
+            </div>
+        </div>
+        
+        <div class="demo-buttons">
+            <a href="index.html" class="demo-btn demo-btn-primary">
+                <i class="fas fa-rocket"></i> Launch Website
+            </a>
+            <a href="README.md" class="demo-btn demo-btn-secondary">
+                <i class="fas fa-book"></i> View Documentation
+            </a>
+        </div>
+        
+        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #e2e8f0;">
+            <p style="color: #9ca3af; font-size: 0.9rem;">
+                <i class="fas fa-code"></i> Built with modern web technologies
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
